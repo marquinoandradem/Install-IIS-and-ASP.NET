@@ -1,0 +1,14 @@
+---
+- name: Instalar IIS y ASP.NET
+  hosts: tu_servidor_windows
+  gather_facts: no
+  tasks:
+    - name: Instalar IIS
+      win_feature:
+        name: Web-Server
+        state: present
+
+    - name: Instalar ASP.NET
+      win_feature:
+        name: Web-Asp-Net45
+        state: present
