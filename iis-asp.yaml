@@ -1,14 +1,16 @@
 ---
 - name: Instalar IIS y ASP.NET
-  hosts: localhost
+  hosts: all
   become: yes
   tasks:
     - name: Instalar IIS
       win_feature:
         name: Web-Server
         state: present
+        become_user: root
 
     - name: Instalar ASP.NET
       win_feature:
         name: Web-Asp-Net45
         state: present
+        become_user: root
