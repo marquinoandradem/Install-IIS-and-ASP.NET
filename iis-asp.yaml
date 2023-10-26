@@ -1,6 +1,6 @@
 ---
 - name: Instalar IIS y ASP.NET
-  hosts: 192.168.68.252
+  hosts: localhost
   become: yes
   tasks:
     - name: Instalar IIS
