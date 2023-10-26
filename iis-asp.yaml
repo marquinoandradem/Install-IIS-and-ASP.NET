@@ -9,12 +9,11 @@
       set_fact:
         ansible_temp_dir: "C:\\ansible_tmp"
     - name: Dar permisos de escritura a la ubicación del directorio temporal
-        win_command: icacls "C:\\ansible_tmp" /grant Administrator:(OI)(CI)F
+      win_command: icacls "C:\\ansible_tmp" /grant Administrator:(OI)(CI)F
     - name: Instalar IIS
       win_feature:
         name: Web-Server
         state: present
-
     - name: Instalar ASP.NET
       win_feature:
         name: Web-Asp-Net45
