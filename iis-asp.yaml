@@ -5,6 +5,10 @@
   gather_facts: no
   become_user: Administrator
   tasks:
+    - name: Crear directorio temporal
+      file:
+        path: "C:\ansible_tmp"
+        state: directory
     - name: Definir la ubicación del directorio temporal
       set_fact:
         ansible_temp_dir: "C:\\ansible_tmp"
