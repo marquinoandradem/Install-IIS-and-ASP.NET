@@ -9,5 +9,3 @@
       win_file:
         path: C:\Users\Administrator\nueva_carpeta
         state: directory
-        become_user: Administrator
-
