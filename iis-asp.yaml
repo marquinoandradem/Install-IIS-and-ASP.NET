@@ -1,7 +1,6 @@
 ---
 - name: Instalar IIS y ASP.NET
   hosts: tu_servidor_windows
-  gather_facts: no
   tasks:
     - name: Instalar IIS
       win_feature:
