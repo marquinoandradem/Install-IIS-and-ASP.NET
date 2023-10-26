@@ -8,16 +8,12 @@
     - name: Definir la ubicación del directorio temporal
       set_fact:
         ansible_temp_dir: "C:\\ansible_tmp"
-        become_user: Administrator
-        
     - name: Instalar IIS
       win_feature:
         name: Web-Server
         state: present
-        become_user: Administrator
 
     - name: Instalar ASP.NET
       win_feature:
         name: Web-Asp-Net45
         state: present
-        become_user: Administrator
