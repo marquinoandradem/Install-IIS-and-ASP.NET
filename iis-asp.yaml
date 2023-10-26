@@ -7,11 +7,11 @@
   tasks:
     - name: Crear directorio temporal
       file:
-        path: "C:\ansible_tmp"
+        path: C:\ansible_tmp
         state: directory
     - name: Definir la ubicación del directorio temporal
       set_fact:
-        ansible_temp_dir: "C:\\ansible_tmp"
+        ansible_temp_dir: C:\\ansible_tmp
     - name: Instalar IIS
       win_feature:
         name: Web-Server
