@@ -1,6 +1,7 @@
 ---
 - name: Instalar IIS y ASP.NET
   hosts: WinServer2019
+  become: yes
   tasks:
     - name: Instalar IIS
       win_feature:
