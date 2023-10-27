@@ -2,10 +2,9 @@
 - name: Crear Carpeta
   hosts: all
   become_method: runas
-  become_user: ansible2
+  become_user: Administrator
   tasks:
   - name: Create directory structure
     ansible.windows.win_file:
       path: C:\ansibledir
       state: directory
-    become_user: ansible2
