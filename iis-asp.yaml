@@ -1,7 +1,7 @@
 ---
 - name: Crear Carpeta
   hosts: all
-  become: yes
+  become: no
   gather_facts: no
   become_user: Administrator
   tasks:
