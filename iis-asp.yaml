@@ -1,11 +1,8 @@
 ---
 - name: Crear Carpeta
   hosts: all
-  become: no
-
-  tasks:
-    - name: Crear la carpeta en C:\Users\Administrator
-      win_file:
-        path: C:\Users\nuevo
-        state: directory
-      become_user: Administrator
+  task:
+  - name: Create directory structure
+    ansible.windows.win_file:
+      path: C:\Temp\folder\subfolder
+      state: directory
