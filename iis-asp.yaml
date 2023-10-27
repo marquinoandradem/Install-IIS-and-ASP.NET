@@ -2,7 +2,7 @@
 - name: Crear Carpeta
   hosts: all
   gather_facts: no
-  become: yes
+  become_method: runas
 
   tasks:
     - name: Crear la carpeta en C:\Users\Administrator
