@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: no
   become: yes
-  become_user: Administrator
+
   tasks:
     - name: Crear la carpeta en C:\Users\Administrator
       win_file:
