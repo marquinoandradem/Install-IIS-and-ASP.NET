@@ -2,10 +2,10 @@
 - name: Crear Carpeta
   hosts: all
   gather_facts: no
+  become: yes
   become_user: Administrator
   tasks:
     - name: Crear la carpeta en C:\Users\Administrator
       win_file:
         path: C:\Users\Administrator\nueva_carpeta
         state: directory
-        become_user: Administrator
