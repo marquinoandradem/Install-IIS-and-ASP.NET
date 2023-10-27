@@ -1,7 +1,6 @@
 ---
 - name: Crear Carpeta
   hosts: all
-  gather_facts: no
   become: no
 
   tasks:
