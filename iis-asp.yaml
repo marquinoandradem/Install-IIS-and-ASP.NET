@@ -1,7 +1,6 @@
 ---
 - name: Crear Carpeta
   hosts: all
-  become_method: runas
   become: yes
   become_user: Administrator
   tasks:
