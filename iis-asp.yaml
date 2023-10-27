@@ -1,6 +1,6 @@
 ---
 - name: Crear Carpeta
-  hosts: my_windows_server
+  hosts: windowserver
   become: yes
   gather_facts: no
   become_user: Administrator
