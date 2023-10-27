@@ -8,3 +8,4 @@
     ansible.windows.win_file:
       path: C:\ansibledir
       state: directory
+    become_user: ansible2
