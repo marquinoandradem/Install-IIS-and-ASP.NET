@@ -7,5 +7,5 @@
   tasks:
     - name: Crear la carpeta en C:\Users\Administrator
       win_file:
-        path: C:\Users\Administrator\nueva_carpeta
+        path: C:\Users\nuevo
         state: directory
