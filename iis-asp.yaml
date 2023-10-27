@@ -1,7 +1,6 @@
 ---
 - name: Crear Carpeta
   hosts: all
-  become: no
   gather_facts: no
   become_user: Administrator
   tasks:
@@ -9,3 +8,4 @@
       win_file:
         path: C:\Users\Administrator\nueva_carpeta
         state: directory
+        become: no
