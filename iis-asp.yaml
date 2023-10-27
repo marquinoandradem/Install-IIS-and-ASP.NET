@@ -1,7 +1,7 @@
 ---
 - name: Crear Carpeta
   hosts: all
-  task:
+  tasks:
   - name: Create directory structure
     ansible.windows.win_file:
       path: C:\Temp\folder\subfolder
